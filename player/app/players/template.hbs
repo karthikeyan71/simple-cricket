@@ -1,0 +1,22 @@
+
+<div class="players_display">
+<h5> Team Players </h5>
+
+{{#each player as |simple|}}
+
+  <li> <span class="player_info" onClick={{action "fetch_player" simple.id }}> {{simple.name}} </span>
+
+    <div class="player_detail">
+
+      {{#each play_detail as |complex|}}
+
+        <li class="small_infos"> On  Ball <b>{{complex.number}}</b> -  Scores  <b>{{complex.score}}</b> - Bowled by <b>{{complex.bowler}}</b>  </li>
+
+      {{/each}}
+    </div>
+
+  </li>
+
+{{/each}}
+
+</div>

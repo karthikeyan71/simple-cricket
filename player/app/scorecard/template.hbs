@@ -1,0 +1,37 @@
+
+<div class="scorecard">
+
+<h4> Team India </h4>
+
+{{#each player_state as |simple|}}
+
+  <li> <span class="front_part">{{simple.name}}</span>
+
+    <span class="middle_part">
+      {{#if simple.play}}
+        {{#if simple.wicket}}
+          {{simple.wicket_mode}} ( Bowler - {{simple.bowler}} )
+          {{#if simple.catch}}
+            catch ({{simple.catch}} )
+          {{/if}}
+        {{else}}
+        NOT OUT
+        {{/if}}
+      {{else}}
+        -
+      {{/if}}
+    </span>
+    <span class="end_part">
+      {{#if simple.play}}
+        {{simple.runs}}({{simple.balls}})
+      {{else}}
+        Yet to Play
+      {{/if}}
+    </span>
+
+  </li>
+{{/each}}
+<li class="total_score"> <b><span class="end_part"> Total : 50 </span></b> </li>
+</div>
+
+<center> <button> {{#link-to 'index'}} Home {{/link-to}} </button> </center>

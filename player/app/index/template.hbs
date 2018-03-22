@@ -1,0 +1,28 @@
+<br><br>
+<div class="current_score">
+
+{{#if current_state}}
+  <br>
+
+  <span style="margin-left:20px;display:inline-block">{{current_state.our}} vs {{current_state.vs}} </span>
+
+  <div class="score_place"> {{current_state.our}} - <b>{{current_state.score}}/{{current_state.wicket}}</b> </div>
+  <div class="other_detail">
+    <br>
+    <li> {{current_state.play_batsmen}} - {{current_state.play_score}}({{current_state.play_ball}})* </li>
+    <li> {{current_state.other_batsmen}} - {{current_state.other_score}}({{current_state.other_ball}}) </li>
+    <li> {{current_state.bowler}} - over {{current_state.over}} ( {{#each current_state.runs as |mid|}} <span class="ball_state">{{mid}}</span> {{/each}} ) </li>
+
+    <li> Yet to Bat : {{current_state.yet}} </li>
+
+  </div>
+{{/if}}
+
+  <button class="score_button"> {{#link-to 'scorecard'}} Full Scorecard {{/link-to}} </button>
+
+</div>
+
+
+
+{{#link-to 'players'}} Players Home {{/link-to}}
+<button {{action "refresh" }} id="refresher"> Players Home </button>

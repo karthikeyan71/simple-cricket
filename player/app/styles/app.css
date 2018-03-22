@@ -1,0 +1,174 @@
+
+
+.players_display
+{
+    width:70%;
+    background-color:#f9f9f9;
+    margin:0 auto;
+    padding:0px 0px;
+    padding-top:0px;
+    border:1px solid transparent;
+    height:auto;
+}
+
+.players_display h5
+{
+  width:100%;
+  margin:0;
+  background-color:grey;
+  color:#fff;
+  padding:10px 0;
+  font-size:12px;
+  font-family:verdana;
+  text-indent: 4%;
+}
+
+.player_info
+{
+  display:block;
+  width:100%;
+  padding:10px 0;
+  text-indent:10px;
+}
+
+.player_info:hover
+{
+  background-color:#f5f5f5;
+  color:#333;
+}
+
+.players_display li
+{
+  list-style: none;
+  display:block;
+  border-bottom:1px solid grey;
+  padding:10px 20px;
+  cursor:pointer;
+}
+
+.small_infos
+{
+  font-size:12px;
+  color:#888;
+  border:0px solid grey !important;
+}
+
+.small_infos b
+{
+  font-size:14px;
+  color:teal;
+}
+
+.score_place
+{
+  margin-left:20px;
+  margin-top:20px;
+  width:100px;
+  color:#888;
+}
+
+li
+{
+  list-style: none;
+  margin:0;
+}
+
+/* index route starts*/
+
+.current_score
+{
+  width:70%;
+  margin:0 auto;
+  height:220px;
+  background-color:#f9f9f9;
+  box-shadow:1px 1px 10px 0.2px grey;
+}
+
+.other_detail
+{
+  margin-left:20px;
+}
+
+.ball_state
+{
+  height:20px;
+  width:20px;
+  display:inline-block;
+  background-color:grey;
+  color:#111;
+  border-radius: 50%;
+  line-height: 20px;
+  font-size:10px;
+  text-align:center;
+}
+
+.score_button
+{
+  margin-top:20px;
+  margin-left:20px;
+  padding:7px 20px;
+  background-color:#bbb;
+  color:#fff;
+  font-weight:600;
+  border:0px solid red;
+}
+
+.score_button a
+{
+  color:#fff;
+  text-decoration: none;
+  font-weight:600;
+  font-size:12px;
+}
+
+.scorecard h4
+{
+  background-color:#555;
+  color:#fff;
+  width:100%;
+  padding:10px 0;
+  text-indent:30px;
+  margin:0;
+}
+
+.scorecard li
+{
+  width:100%;
+  background-color:;
+  display:block;
+  padding:10px 0;
+  background-color: #d5d5d5;
+  text-indent :10px;
+  height:20px;
+  position:relative;
+  border-bottom:1px solid grey;
+}
+
+.end_part
+{
+  float:right;
+  margin-right:50px;
+}
+
+.front_part
+{
+  float:left;
+  margin-left:20px;
+}
+
+.middle_part
+{
+  position:absolute;
+  left:40%;
+}
+
+.scorecard
+{
+  width:70%;
+  height:auto;
+  background-color:#f9f9f9;
+  margin:20px auto;
+  box-shadow:1px 1px 10px 0.2px grey;
+}
+
+/* index route ends */
